@@ -12,15 +12,15 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css">
   <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="{{elixir('css/bootstrap.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
   <!-- FontAwesome -->
-  <link rel="stylesheet" type="text/css" href="{{elixir('css/font-awesome.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}" />
   <!-- youplay -->
-  <link rel="stylesheet" type="text/css" href="{{elixir('css/youplay.css')}}" />
-  <!-- RTL (uncomment line before this to enable RTL support) -->
-  <link rel="stylesheet" type="text/css" href="{{elixir('css/youplay-rtl.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset('css/youplay.min.css')}}" />
+
+  <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/youplay-rtl.css')}}" /> -->
   <!--[if lt IE 9]>
-      <script src="{{elixir('js/html5shiv.min.js')}}"></script>
+      <script src="{{asset('js/html5shiv.min.js')}}"></script>
     <![endif]-->
 </head>
 <body>
@@ -251,22 +251,22 @@
   <section class="content-wrap full youplay-404">
 
     <!-- jQuery -->
-  <script type="text/javascript" src="{{elixir('js/jquery.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 
   <!-- CSS Shapes Polyfill -->
-  <script type="text/javascript" src="{{elixir('shapes-polyfill.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/shapes-polyfill.min.js')}}"></script>
 
   <!-- Hexagon Progress -->
-  <script type="text/javascript" src="{{elixir('js/jquery.hexagonprogress.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/jquery.hexagonprogress.min.js')}}"></script>
 
   <!-- Bootstrap -->
-  <script type="text/javascript" src="{{elixir('js/bootstrap.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 
   <!-- Smooth Scroll -->
-  <script type="text/javascript" src="{{elixir('js/smoothscroll.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/smoothscroll.js')}}"></script>
 
   <!-- youplay -->
-  <script type="text/javascript" src="{{elixir('js/youplay.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/youplay.min.js')}}"></script>
   <!-- init youplay -->
   <script>
     if(typeof youplay !== 'undefined') {
