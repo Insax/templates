@@ -1,79 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
-
-    <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
-
-    <style>
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  @yield('title')
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="{{elixir('css/bootstrap.css')}}" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" type="text/css" href="{{elixir('css/font-awesome.css')}}" />
+  <!-- youplay -->
+  <link rel="stylesheet" type="text/css" href="{{elixir('css/youplay.css')}}" />
+  <!-- RTL (uncomment line before this to enable RTL support) -->
+  <link rel="stylesheet" type="text/css" href="{{elixir('css/youplay-rtl.css')}}" />
+  <!--[if lt IE 9]>
+      <script src="{{elixir('js/html5shiv.min.js')}}"></script>
+    <![endif]-->
 </head>
-<body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
-                </a>
+<body>
+  <!-- Preloader -->
+  <div class="page-preloader preloader-wrapp">
+    <img src="assets/images/logo.png" alt="">
+    <div class="preloader"></div>
+  </div>
+  <!-- /Preloader -->
+  <!-- Navbar -->
+  <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown dropdown-hover ">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      Store <span class="caret"></span> <span class="label">games</span>
+                    </a>
+            <div class="dropdown-menu" style="width: 320px;">
+              <ul role="menu">
+                <li><a href="store-1.html">Store Style 1</a>
+                </li>
+                <li><a href="store-2.html">Store Style 2</a>
+                </li>
+                <li><a href="cart.html">Cart</a>
+                </li>
+              </ul>
+              <!--
+                        -->
+              <ul role="menu">
+                <li><a href="store-product-1.html">Product Style 1</a>
+                </li>
+                <li><a href="store-product-2.html">Product Style 2</a>
+                </li>
+                <li><a href="checkout.html">Checkout</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
+          </li>
+          <li class="dropdown dropdown-hover ">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      Blog <span class="caret"></span> <span class="label">news</span>
+                    </a>
+            <div class="dropdown-menu" style="width: 320px;">
+              <ul role="menu">
+                <li><a href="blog-1.html">Blog Style 1</a>
+                </li>
+                <li><a href="blog-2.html">Blog Style 2</a>
+                </li>
+                <li><a href="blog-3.html">Blog Style 3</a>
+                </li>
+              </ul>
+              <!--
+                        -->
+              <ul role="menu">
+                <li><a href="blog-post-1.html">Blog Post 1</a>
+                </li>
+                <li><a href="blog-post-2.html">Blog Post 2</a>
+                </li>
+                <li><a href="blog-post-3.html">Blog Post 3</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
+          </li>
+          <li class="dropdown dropdown-hover active">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      Features <span class="caret"></span> <span class="label">full list</span>
+                    </a>
+            <div class="dropdown-menu" style="width: 350px;">
+              <ul role="menu">
+                <li class="dropdown dropdown-submenu pull-left ">
+                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User</a>
+                  <div class="dropdown-menu">
+                    <ul role="menu">
+                      <li><a href="user-activity.html">Activity</a>
+                      </li>
+                      <li><a href="user-profile.html">Profile</a>
+                      </li>
+                      <li><a href="user-messages.html">Messages</a>
+                      </li>
+                      <li><a href="user-messages-compose.html">Messages Compose</a>
+                      </li>
+                      <li><a href="user-settings.html">Settings</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="forums.html">Forums</a>
+                </li>
+                <li><a href="forums-topics.html">Forums Topics</a>
+                </li>
+                <li><a href="forums-single-topic.html">Single Topic</a>
+                </li>
+                <li><a href="matches-list.html">Matches List</a>
+                </li>
+                <li><a href="match.html">Match</a>
+                </li>
+                <li><a href="match-2.html">Match with Maps</a>
+                </li>
+              </ul>
+              <!--
+                        -->
+              <ul role="menu">
+                <li><a href="components.html">Components</a>
+                </li>
+                <li><a href="coming-soon.html">Coming Soon</a>
+                </li>
+                <li><a href="contact.html">Contact Us</a>
+                </li>
+                <li><a href="search.html">Search</a>
+                </li>
+                <li><a href="login.html">Login</a>
+                </li>
+                <li class="active"><a href="404.html">404</a>
+                </li>
+                <li><a href="blank.html">Blank</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      John Doe <span class="badge bg-default">2</span> <span class="caret"></span> <span class="label">it is you</span>
+                    </a>
+            <div class="dropdown-menu">
+              <ul role="menu">
+                <li><a href="../documentation">Documentation</a>
+                </li>
+                <li><a href="http://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207?ref=_nK">Purchase</a>
+                </li>
+                <li class="divider"></li>
 
-    @yield('content')
+                <li><a href="user-profile.html">Profile <span class="badge pull-right bg-warning">13</span></a>
+                </li>
+                <li><a href="cart.html">My Cart <span class="badge pull-right bg-default">3</span></a>
+                </li>
+                <li class="divider"></li>
 
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+                <li><a href="login.html">Log Out</a>
+                </li>
+                <li class="dropdown dropdown-submenu pull-left">
+                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More..</a>
+                  <div class="dropdown-menu">
+                    <ul role="menu">
+                      <li><a href="#!">3rd level</a>
+                      </li>
+                      <li><a href="#!">3rd level</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="search-toggle" href="search.html">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+          <li class="dropdown dropdown-hover dropdown-cart">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <div class="dropdown-menu" style="width: 300px;">
+              <div class="row youplay-side-news">
+                <div class="col-xs-3 col-md-4">
+                  <a href="#" class="angled-img">
+                    <div class="img">
+
+                      <img src="assets/images/game-bloodborne-500x375.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-9 col-md-8">
+                  <a href="#" style="text-decoration: none;" class="pull-right mr-10"><i class="fa fa-times"></i></a>
+
+                  <h4 class="ellipsis"><a href="#">Bloodborne</a></h4>
+                  <span class="quantity">1 × <span class="amount">$50.00</span></span>
+                </div>
+              </div>
+
+              <div class="row youplay-side-news">
+                <div class="col-xs-3 col-md-4">
+                  <a href="#" class="angled-img">
+                    <div class="img">
+
+                      <img src="assets/images/game-kingdoms-of-amalur-reckoning-500x375.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-9 col-md-8">
+                  <a href="#" style="text-decoration: none;" class="pull-right mr-10"><i class="fa fa-times"></i></a>
+
+                  <h4 class="ellipsis"><a href="#">Kingdoms of Amalur</a></h4>
+                  <span class="quantity">1 × <span class="amount">$20.00</span></span>
+                </div>
+              </div>
+
+              <div class="ml-20 mr-20 pull-right"><strong>Subtotal:</strong>  <span class="amount">$70.00</span>
+              </div>
+
+              <div class="btn-group pull-right m-15">
+                <a href="#" class="btn btn-default btn-sm">View Cart</a>
+                <a href="#" class="btn btn-default btn-sm">Checkout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  @yield('content')
+    <!-- Main Content -->
+  <section class="content-wrap full youplay-404">
+
+    <!-- jQuery -->
+  <script type="text/javascript" src="{{elixir('js/jquery.js')}}"></script>
+
+  <!-- CSS Shapes Polyfill -->
+  <script type="text/javascript" src="{{elixir('shapes-polyfill.js')}}"></script>
+
+  <!-- Hexagon Progress -->
+  <script type="text/javascript" src="{{elixir('js/jquery.hexagonprogress.js')}}"></script>
+
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="{{elixir('js/bootstrap.js')}}"></script>
+
+  <!-- Smooth Scroll -->
+  <script type="text/javascript" src="{{elixir('js/smoothscroll.js')}}"></script>
+
+  <!-- youplay -->
+  <script type="text/javascript" src="{{elixir('js/youplay.js')}}"></script>
+  <!-- init youplay -->
+  <script>
+    if(typeof youplay !== 'undefined') {
+        youplay.init({
+            smoothscroll: false,
+        });
+    }
+  </script>
+
 </body>
+
 </html>
