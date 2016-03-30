@@ -12,5 +12,18 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('app.scss')
+       .sass('magnific-popup.scss')
+       .sass('owl.carousel.scss')
+       .sass('slider.scss')
+       .sass('sweet-alert.scss')
+       .browserify('smooth-scroll.js')
+       .version([
+            'css/app.css',
+            'css/magnific-popup.css',
+            'css/owl.carousel.css',
+            'css/slider.css',
+            'css/sweet-alert.css',
+            'js/smooth-scroll.js'
+            ]);
 });
