@@ -85,7 +85,7 @@ return [
     | Encryption Key
     |--------------------------------------------------------------------------
     |
-    | This key is used by the Illuminate encrypter service and should be set
+    | This key if used by the Illuminate encrypter service and should be set
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
@@ -155,7 +155,6 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ],
 
     /*
@@ -171,6 +170,7 @@ return [
 
     'aliases' => [
 
+        //Aliases by Laravel
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -202,6 +202,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // Custom Aliases
+        'Elements' => App\Helpers\Elements::class,
+        'UserInfo' => App\Helpers\UserInfo::class,
     ],
 
 ];

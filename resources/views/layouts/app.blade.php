@@ -10,26 +10,23 @@
   <link rel="icon" type="image/png" href="assets/images/icon.png">
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-  <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css"> -->
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
   <!-- FontAwesome -->
   <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}" />
   <!-- youplay -->
   <link rel="stylesheet" type="text/css" href="{{asset('css/youplay.min.css')}}" />
-
+  <!-- font -->
+  <!--  <link rel="stylesheet" type="text/css" href="{{elixir('css/app.css')}}" /> -->
+  <link rel="stylesheet" type="text/css" href="{{asset('css/settings.css')}}" />
   <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/youplay-rtl.css')}}" /> -->
   <!--[if lt IE 9]>
       <script src="{{asset('js/html5shiv.min.js')}}"></script>
     <![endif]-->
 </head>
 <body>
-  <!-- Preloader -->
-  <div class="page-preloader preloader-wrapp">
-    <img src="assets/images/logo.png" alt="">
-    <div class="preloader"></div>
-  </div>
-  <!-- /Preloader -->
+{!! Elements::Preloader() !!}
   <!-- Navbar -->
   <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
     <div class="container">
@@ -40,15 +37,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
           <img src="assets/images/logo.png" alt="">
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
+      @if(Auth::check())
         <ul class="nav navbar-nav">
           <li class="dropdown dropdown-hover ">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Store <span class="caret"></span> <span class="label">games</span>
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
+            Lorem Ipsum <span class="caret"></span> <span class="label">Dia Acmet</span>
                     </a>
             <div class="dropdown-menu" style="width: 320px;">
               <ul role="menu">
@@ -153,6 +151,36 @@
             </div>
           </li>
         </ul>
+      @else
+      <ul class="nav navbar-nav">
+          <li class="dropdown dropdown-hover ">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
+            {{ Elements::NavStart() }} <span class="caret"></span> <span class="label">News</span>
+                    </a>
+            <div class="dropdown-menu" style="width: 320px;">
+              <ul role="menu">
+                <li>
+                  <a href="store-1.html">Store Style 1</a>
+                </li>
+                <li>
+                  <a href="store-2.html">Store Style 2</a>
+                </li>
+                <li>
+                  <a href="cart.html">Cart</a>
+                </li>
+              </ul>
+              <ul role="menu">
+                <li><a href="store-product-1.html">Product Style 1</a>
+                </li>
+                <li><a href="store-product-2.html">Product Style 2</a>
+                </li>
+                <li><a href="checkout.html">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      @endif
+      @if(Auth::check())
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown dropdown-hover">
             <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -219,7 +247,6 @@
                 <div class="col-xs-3 col-md-4">
                   <a href="#" class="angled-img">
                     <div class="img">
-
                       <img src="assets/images/game-kingdoms-of-amalur-reckoning-500x375.jpg" alt="">
                     </div>
                   </a>
@@ -242,14 +269,16 @@
             </div>
           </li>
         </ul>
+      @else
+        <ul class="nav navbar-nav navbar-right">
+          
+        </ul>
+      @endif
       </div>
     </div>
   </nav>
   <!-- Navbar -->
   @yield('content')
-    <!-- Main Content -->
-  <section class="content-wrap full youplay-404">
-
     <!-- jQuery -->
   <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 
@@ -262,8 +291,24 @@
   <!-- Bootstrap -->
   <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 
+    <!-- Skrollr -->
+  <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
+
+  <!-- Jarallax -->
+  <script type="text/javascript" src="{{asset('js/jarallax.js')}}"></script>
+
   <!-- Smooth Scroll -->
   <script type="text/javascript" src="{{asset('js/smoothscroll.js')}}"></script>
+
+    <!-- Countdown -->
+  <script type="text/javascript" src="{{asset('js/jquery.countdown.min.js')}}"></script>
+
+  <!-- Revolution Slider -->
+  <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}"></script>
+
+  <!-- Isotope -->
+  <script type="text/javascript" src="{{asset('js/isotope.pkgd.min.js')}}"></script>
 
   <!-- youplay -->
   <script type="text/javascript" src="{{asset('js/youplay.min.js')}}"></script>

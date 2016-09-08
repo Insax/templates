@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAAA;EACI,sBAAsB,EACzB;;AACD;EACI,sBAAsB,EACzB","file":"app.css","sourcesContent":["html {\n    font-family: Orbitron;\n}\nbody {\n    font-family: Orbitron;\n}\n"],"sourceRoot":"/source/"}

@@ -1,950 +1,507 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Templates</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Icon -->
-  <link rel="icon" type="image/png" href="assets/images/icon.png">
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Share+Tech+Mono" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
-  <!-- FontAwesome -->
-  <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}" />
-  <!-- Revolution Slider -->
-  <link rel="stylesheet" type="text/css" href="{{elixir('css/slider.css')}}" />
-  <!-- youplay -->
-  <link rel="stylesheet" type="text/css" href="{{asset('css/youplay.min.css')}}" />
-  <!-- RTL (uncomment line before this to enable RTL support) -->
-  <!-- <link rel="stylesheet" type="text/css" href="../assets/youplay/css/youplay-rtl.css" /> -->
-</head>
-
-<body>
-
-  <!-- Preloader -->
-  <div class="page-preloader preloader-wrapp">
-    <img src="assets/images/logo.png" alt="">
-    <div class="preloader"></div>
-  </div>
-  <!-- /Preloader -->
-
-  <!-- Navbar -->
-  <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index-2.html">
-          <img src="assets/images/logo.png" alt="">
-        </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="dropdown dropdown-hover active">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Store <span class="caret"></span> <span class="label">games</span>
-                    </a>
-            <div class="dropdown-menu" style="width: 320px;">
-              <ul role="menu">
-                <li><a href="store-1.html">Store Style 1</a>
-                </li>
-                <li class="active"><a href="store-2.html">Store Style 2</a>
-                </li>
-                <li><a href="cart.html">Cart</a>
-                </li>
-              </ul>
-              <!--
-                        -->
-              <ul role="menu">
-                <li><a href="store-product-1.html">Product Style 1</a>
-                </li>
-                <li><a href="store-product-2.html">Product Style 2</a>
-                </li>
-                <li><a href="checkout.html">Checkout</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="dropdown dropdown-hover ">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Blog <span class="caret"></span> <span class="label">news</span>
-                    </a>
-            <div class="dropdown-menu" style="width: 320px;">
-              <ul role="menu">
-                <li><a href="blog-1.html">Blog Style 1</a>
-                </li>
-                <li><a href="blog-2.html">Blog Style 2</a>
-                </li>
-                <li><a href="blog-3.html">Blog Style 3</a>
-                </li>
-              </ul>
-              <!--
-                        -->
-              <ul role="menu">
-                <li><a href="blog-post-1.html">Blog Post 1</a>
-                </li>
-                <li><a href="blog-post-2.html">Blog Post 2</a>
-                </li>
-                <li><a href="blog-post-3.html">Blog Post 3</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="dropdown dropdown-hover ">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Features <span class="caret"></span> <span class="label">full list</span>
-                    </a>
-            <div class="dropdown-menu" style="width: 350px;">
-              <ul role="menu">
-                <li class="dropdown dropdown-submenu pull-left ">
-                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User</a>
-                  <div class="dropdown-menu">
-                    <ul role="menu">
-                      <li><a href="user-activity.html">Activity</a>
-                      </li>
-                      <li><a href="user-profile.html">Profile</a>
-                      </li>
-                      <li><a href="user-messages.html">Messages</a>
-                      </li>
-                      <li><a href="user-messages-compose.html">Messages Compose</a>
-                      </li>
-                      <li><a href="user-settings.html">Settings</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="forums.html">Forums</a>
-                </li>
-                <li><a href="forums-topics.html">Forums Topics</a>
-                </li>
-                <li><a href="forums-single-topic.html">Single Topic</a>
-                </li>
-                <li><a href="matches-list.html">Matches List</a>
-                </li>
-                <li><a href="match.html">Match</a>
-                </li>
-                <li><a href="match-2.html">Match with Maps</a>
-                </li>
-              </ul>
-              <!--
-                        -->
-              <ul role="menu">
-                <li><a href="components.html">Components</a>
-                </li>
-                <li><a href="coming-soon.html">Coming Soon</a>
-                </li>
-                <li><a href="contact.html">Contact Us</a>
-                </li>
-                <li><a href="search.html">Search</a>
-                </li>
-                <li><a href="login.html">Login</a>
-                </li>
-                <li><a href="404.html">404</a>
-                </li>
-                <li><a href="blank.html">Blank</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown dropdown-hover">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      John Doe <span class="badge bg-default">2</span> <span class="caret"></span> <span class="label">it is you</span>
-                    </a>
-            <div class="dropdown-menu">
-              <ul role="menu">
-                <li><a href="http://html.nkdev.info/youplay/documentation">Documentation</a>
-                </li>
-                <li><a href="http://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207?ref=_nK">Purchase</a>
-                </li>
-                <li class="divider"></li>
-
-                <li><a href="user-profile.html">Profile <span class="badge pull-right bg-warning">13</span></a>
-                </li>
-                <li><a href="cart.html">My Cart <span class="badge pull-right bg-default">3</span></a>
-                </li>
-                <li class="divider"></li>
-
-                <li><a href="login.html">Log Out</a>
-                </li>
-                <li class="dropdown dropdown-submenu pull-left">
-                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More..</a>
-                  <div class="dropdown-menu">
-                    <ul role="menu">
-                      <li><a href="#!">3rd level</a>
-                      </li>
-                      <li><a href="#!">3rd level</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a class="search-toggle" href="search.html">
-              <i class="fa fa-search"></i>
-            </a>
-          </li>
-          <li class="dropdown dropdown-hover dropdown-cart">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <i class="fa fa-shopping-cart"></i>
-            </a>
-            <div class="dropdown-menu" style="width: 300px;">
-              <div class="row youplay-side-news">
-                <div class="col-xs-3 col-md-4">
-                  <a href="#" class="angled-img">
-                    <div class="img">
-
-                      <img src="assets/images/game-bloodborne-500x375.jpg" alt="">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-xs-9 col-md-8">
-                  <a href="#" style="text-decoration: none;" class="pull-right mr-10"><i class="fa fa-times"></i></a>
-
-                  <h4 class="ellipsis"><a href="#">Bloodborne</a></h4>
-                  <span class="quantity">1 × <span class="amount">$50.00</span></span>
-                </div>
-              </div>
-
-              <div class="row youplay-side-news">
-                <div class="col-xs-3 col-md-4">
-                  <a href="#" class="angled-img">
-                    <div class="img">
-
-                      <img src="assets/images/game-kingdoms-of-amalur-reckoning-500x375.jpg" alt="">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-xs-9 col-md-8">
-                  <a href="#" style="text-decoration: none;" class="pull-right mr-10"><i class="fa fa-times"></i></a>
-
-                  <h4 class="ellipsis"><a href="#">Kingdoms of Amalur</a></h4>
-                  <span class="quantity">1 × <span class="amount">$20.00</span></span>
-                </div>
-              </div>
-
-              <div class="ml-20 mr-20 pull-right"><strong>Subtotal:</strong>  <span class="amount">$70.00</span>
-              </div>
-
-              <div class="btn-group pull-right m-15">
-                <a href="#" class="btn btn-default btn-sm">View Cart</a>
-                <a href="#" class="btn btn-default btn-sm">Checkout</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- /Navbar -->
-
-
+@extends('layouts.app')
+@section('title')
+<title>Templates</title>
+@endsection
+@section('content')
   <!-- Main Content -->
   <section class="content-wrap">
 
-    <!-- Slider Revolution-->
-    <!--
-        Use classes:
-        rs-fullscreen
-    -->
-    <div class="tp-banner-container rs-youplay">
-      <div class="tp-banner">
-        <ul>
-          <!-- SLIDE NR. 1  -->
-          <li data-thumb="assets/images/banner-bg.jpg" data-saveperformance="on" data-transition="random-static" data-slotamount="7" data-masterspeed="700">
-            <!-- MAIN IMAGE -->
-            <img src="assets/images/dummy.png" alt="" data-lazyload="assets/images/banner-bg.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            <!-- LAYERS -->
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="-60" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="500" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <h2 class="h1">Diablo III: <br>Reaper of Souls</h2>
-            </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="60" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="1000" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <a class="btn btn-lg" href="#!">Purchase</a>
-            </div>
-          </li>
-
-          <!-- SLIDE NR. 2  -->
-          <li data-thumb="assets/images/game-dark-souls-ii-2-1920x1248.jpg" data-saveperformance="on" data-transition="random-static" data-slotamount="7" data-masterspeed="700">
-            <!-- MAIN IMAGE -->
-            <img src="assets/images/dummy.png" alt="" data-lazyload="assets/images/game-dark-souls-ii-2-1920x1248.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            <!-- LAYERS -->
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="-45" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="500" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <h2 class="h1">Dark Souls II</h2>
-            </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="45" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="1000" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <a class="btn btn-lg" href="#!">Purchase</a>
-            </div>
-          </li>
-
-          <!-- SLIDE NR. 3  -->
-          <li data-thumb="assets/images/game-kingdoms-of-amalur-reckoning-1440x900.jpg" data-saveperformance="on" data-transition="random-static" data-slotamount="7" data-masterspeed="700">
-            <!-- MAIN IMAGE -->
-            <img src="assets/images/dummy.png" alt="" data-lazyload="assets/images/game-kingdoms-of-amalur-reckoning-1440x900.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            <!-- LAYERS -->
-
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="-60" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="500" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <h2 class="h1">Kingdoms of Amalur: <br>Reckoning</h2>
-            </div>
-
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption customin customout" data-x="left" data-hoffset="60" data-y="center" data-voffset="60" data-customin="x:200;scaleX:0.5;scaleY:0.5;" data-customout="x:0;scaleX:1;scaleY:1;" data-start="1000" data-speed="700" data-easing="Sine.easeInOut"
-            data-endspeed="600" data-endeasing="Linear.easeNone">
-              <a class="btn btn-lg" href="#!">Purchase</a>
-            </div>
-          </li>
-        </ul>
-        <div class="tp-bannertimer"></div>
+    <!-- Banner -->
+    <div class="tp-banner banner-top-tp-banner-parallax small">
+      <div class="image" style="background-image: url('assets/images/banner-blog-bg.jpg')">
       </div>
-    </div>
-    <!-- /Slider Revolution-->
 
-    <div class="container youplay-store">
-
-      <!-- Left Side -->
-      <div class="col-md-3">
-
-        <!-- Side Search -->
-        <div class="side-block ">
-          <p>Search by Games:</p>
-          <form action="http://html.nkdev.info/youplay/dark/search.html">
-            <div class="youplay-input">
-              <input type="text" name="search" placeholder="enter search term">
-            </div>
-          </form>
-        </div>
-        <!-- /Side Search -->
-
-        <!-- Side Categories -->
-        <div class="side-block ">
-          <h4 class="block-title">Categories</h4>
-          <ul class="block-content">
-            <li><a href="#!">All</a>
-            </li>
-            <li><a href="#!">Action</a>
-            </li>
-            <li><a href="#!">Adventure</a>
-            </li>
-            <li><a href="#!">Casual</a>
-            </li>
-            <li><a href="#!">Indie</a>
-            </li>
-            <li><a href="#!">Racing</a>
-            </li>
-            <li><a href="#!">RPG</a>
-            </li>
-            <li><a href="#!">Simulation</a>
-            </li>
-            <li><a href="#!">Strategy</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /Side Categories -->
-
-        <!-- Side Popular News -->
-        <div class="side-block ">
-          <h4 class="block-title">Popular Games</h4>
-          <div class="block-content p-0">
-            <!-- Single News Block -->
-            <div class="row youplay-side-news">
-              <div class="col-xs-3 col-md-4">
-                <a href="store-product-1.html" class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-bloodborne-500x375.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col-xs-9 col-md-8">
-                <h4 class="ellipsis"><a href="store-product-1.html" title="Bloodborne">Bloodborne</a></h4>
-                <span class="price">$50.00</span>
-              </div>
-            </div>
-            <!-- /Single News Block -->
-
-            <!-- Single News Block -->
-            <div class="row youplay-side-news">
-              <div class="col-xs-3 col-md-4">
-                <a href="#!" class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-dark-souls-ii-500x375.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col-xs-9 col-md-8">
-                <h4 class="ellipsis"><a href="#!" title="Dark Souls II">Dark Souls II</a></h4>
-                <span class="price">$39.99 <sup><del>$49.99</del></sup></span>
-              </div>
-            </div>
-            <!-- /Single News Block -->
-
-            <!-- Single News Block -->
-            <div class="row youplay-side-news">
-              <div class="col-xs-3 col-md-4">
-                <a href="#!" class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-kingdoms-of-amalur-reckoning-500x375.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col-xs-9 col-md-8">
-                <h4 class="ellipsis"><a href="#!" title="Kingdoms of Amalur">Kingdoms of Amalur</a></h4>
-                <span class="price">$20.00</span>
-              </div>
-            </div>
-            <!-- /Single News Block -->
-
-            <!-- Single News Block -->
-            <div class="row youplay-side-news">
-              <div class="col-xs-3 col-md-4">
-                <a href="#!" class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-diablo-iii-500x375.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col-xs-9 col-md-8">
-                <h4 class="ellipsis"><a href="#!" title="Let's Grind Diablo III">Diablo III</a></h4>
-                <span class="price">$10.00</span>
-              </div>
-            </div>
-            <!-- /Single News Block -->
+      <div class="info">
+        <div>
+          <div class="container">
+            <h2>Components</h2>
           </div>
         </div>
-        <!-- /Side Popular News -->
       </div>
-      <!-- /Left Side -->
+    </div>
+    <!-- /Banner -->
 
-      <!-- Games List -->
-      <div class="col-md-9 isotope">
-        <!-- Sort Categories -->
-        <ul class="pagination isotope-options">
-          <li data-filter="all" class="active"><span>All</span>
+
+    <div class="container-tp-content">
+
+ d      <!-- Buttons -->
+      <h2 class="h1 mt-0">Buttons</h2>
+      <a href="#!" class="btn btn-xs">Button</a>
+      <a href="#!" class="btn btn-xs active">Button</a>
+      <br>
+      <br>
+      <a href="#!" class="btn btn-sm">Button</a>
+      <a href="#!" class="btn btn-sm active">Button</a>
+      <br>
+      <br>
+      <a href="#!" class="btn">Button</a>
+      <a href="#!" class="btn active">Button</a>
+      <br>
+      <br>
+      <a href="#!" class="btn btn-lg">Button</a>
+      <a href="#!" class="btn btn-lg active">Button</a>
+
+      <h3>Button Colors</h3>
+      <a href="#!" class="btn btn-primary">Primary</a>
+      <a href="#!" class="btn btn-success">Success</a>
+      <a href="#!" class="btn btn-info">Info</a>
+      <a href="#!" class="btn btn-warning">Warning</a>
+      <a href="#!" class="btn btn-danger">Danger</a>
+      <br>
+      <br>
+      <a href="#!" class="btn active btn-primary">Primary</a>
+      <a href="#!" class="btn active btn-success">Success</a>
+      <a href="#!" class="btn active btn-info">Info</a>
+      <a href="#!" class="btn active btn-warning">Warning</a>
+      <a href="#!" class="btn active btn-danger">Danger</a>
+
+      <h3>Button Groups</h3>
+      <div class="btn-group">
+        <a href="#!" class="btn">Button</a>
+        <a href="#!" class="btn">Button</a>
+        <a href="#!" class="btn">Button</a>
+        <a href="#!" class="btn">Button</a>
+      </div>
+
+      <h3>Button Dropdown</h3>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Action <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a>
           </li>
-          <li data-filter="free"><span>Free</span>
+          <li><a href="#">Another action</a>
           </li>
-          <li data-filter="popular"><span>Popular</span>
+          <li><a href="#">Something else here</a>
           </li>
-          <li data-filter="specials"><span>Specials</span>
-          </li>
-          <li data-filter="upcoming"><span>Upcoming</span>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a>
           </li>
         </ul>
-        <!-- /Sort Categories -->
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a>
+          </li>
+          <li><a href="#">Another action</a>
+          </li>
+          <li><a href="#">Something else here</a>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-default">Dropup</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a>
+          </li>
+          <li><a href="#">Another action</a>
+          </li>
+          <li><a href="#">Something else here</a>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /Buttons -->
 
-        <div class="isotope-list">
 
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-bloodborne-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Bloodborne</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $50.00
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <!-- Pagination -->
+      <h2 class="h1">Pagination</h2>
+      <ul class="pagination mt-0 mb-0">
+        <li><a href="#!">Button</a>
+        </li>
+        <li class="active"><a href="#!">Button</a>
+        </li>
+        <li><a href="#!">Button</a>
+        </li>
+        <li><a href="#!">Button</a>
+        </li>
+        <li><a href="#!">Button</a>
+        </li>
+      </ul>
+      <!-- /Pagination -->
+
+
+      <!-- Progress Bars -->
+      <h2 class="h1">Progress Bars</h2>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+          <span class="sr-only">20% Complete</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="sr-only">60% Complete (warning)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+      <!-- /Progress Bars -->
+
+
+      <!-- Timeline -->
+      <h2 class="h1">Timeline</h2>
+      Timeline example you can see in this page <a href="user-profile.html">user-profile.html</a>
+      <!-- /Timeline -->
+
+
+      <!-- Accordion -->
+      <h2 class="h1">Accordion</h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            One <span class="icon-plus"></span>
+                        </a>
+                    </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium cum dolor apparatus. Qui curis! Modo nobis certamen est, qui non credunt at.
             </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular,specials">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-dark-souls-ii-500x375.jpg" alt="">
-                    <div class="badge show bg-default">-20%</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Dark Souls II</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $39.99 <sup><del>$49.99</del></sup>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Two <span class="icon-plus"></span>
+                        </a>
+                    </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium cum dolor apparatus. Qui curis! Modo nobis certamen est, qui non credunt at.
             </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-kingdoms-of-amalur-reckoning-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Kingdoms of Amalur</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $20.00
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Three <span class="icon-plus"></span>
+                        </a>
+                    </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium cum dolor apparatus. Qui curis! Modo nobis certamen est, qui non credunt at.
             </div>
-          </a>
-          <!-- /Single Product Block -->
+          </div>
+        </div>
+      </div>
+      <!-- /Accordion -->
 
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-the-witcher-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>The Witcher</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $14.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
 
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-skyrim-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Skyrim</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $11.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
+      <!-- Tabs -->
+      <h2 class="h1">Tabs</h2>
+      <div role="tabpanel">
 
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-middle-eart-shadow-of-mordor-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Middle-earth</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $29.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+          </li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+          </li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+          </li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+          </li>
+        </ul>
 
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="specials,free">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-soul-sacrifice-500x375.jpg" alt="">
-                    <div class="badge show bg-success">-100%</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Soul Sacrifice</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      <span class="text-success">FREE!</span>  <sup><del>$29.99</del></sup>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-diablo-iii-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Diablo III</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $10.00
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="specials">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-dragons-dogma-500x375.jpg" alt="">
-                    <div class="badge show bg-default">-30%</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Dragons Dogma</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $34.99 <sup><del>$49.99</del></sup>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-lords-of-the-fallen-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Lords of the Fallen</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $14.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="upcoming">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-prototype-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <h4>Prototype 3</h4>
-                <div class="date">
-                  <i class="fa fa-calendar"></i> beginning of 2015
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-risen-3-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Risen 3</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-o"></i>
-                      <i class="fa fa-star-half-o"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $9.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-neverwinter-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Neverwinter</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $13.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="popular">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-assassins-creed-4-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6 col-md-9">
-                    <h4>Assassin's Creed 4</h4>
-                    <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-3 align-right">
-                    <div class="price">
-                      $21.99
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
-          <!-- Single Product Block -->
-          <a href="#!" class="item angled-bg" data-filters="upcoming">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-xs-4">
-                <div class="angled-img">
-                  <div class="img">
-                    <img src="assets/images/game-half-life-3-500x375.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-9 col-xs-8">
-                <h4>Half-Life 3</h4>
-                <div class="date">
-                  <i class="fa fa-calendar"></i> never
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- /Single Product Block -->
-
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+            Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">
+            Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+            Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?
+          </div>
+          <div role="tabpanel" class="tab-pane" id="settings">
+            Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!
+          </div>
         </div>
 
       </div>
-      <!-- /Games List -->
+      <!-- /Tabs -->
+
+
+      <!-- Features -->
+      <h2 class="h1">Features</h2>
+      <section class=-tp-features container">
+        <div class="col-m dd-3 col-xs-12">
+          <div class="feature angled-bg">
+            <i class="fa fa-cc-visa"></i>
+            <h3>Payment</h3>
+            <small>More than 10 payment systems</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="feature angled-bg">
+            <i class="fa fa-gamepad"></i>
+            <h3>Games</h3>
+            <small>A large number of games</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="feature angled-bg">
+            <i class="fa fa-money"></i>
+            <h3>Cheap</h3>
+            <small>Lowest prices on the Internet</small>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="feature angled-bg">
+            <i class="fa fa-users"></i>
+            <h3>Community</h3>
+            <small>The largest gaming community</small>
+          </div>
+        </div>
+      </section>
+      <!-- /Features -->
+
+
+      <!-- Tables -->
+      <h2 class="h1">Tables</h2>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- /Tables -->
+
+
+      <!-- Pager -->
+      <h2 class="h1">Pager</h2>
+      <nav>
+        <ul class="pager">
+          <li><a href="#">Previous</a>
+          </li>
+          <li><a href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a>
+          </li>
+          <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /Pager -->
+
+
+      <!-- Labels -->
+      <h2 class="h1">Labels</h2>
+      <h1>Example heading <span class="label label-default">New</span></h1>
+      <h2>Example heading <span class="label label-default">New</span></h2>
+      <h3>Example heading <span class="label label-default">New</span></h3>
+      <h4>Example heading <span class="label label-default">New</span></h4>
+      <h5>Example heading <span class="label label-default">New</span></h5>
+      <h6>Example heading <span class="label label-default">New</span></h6>
+
+      <h3>Available variations</h3>
+      <span class="label label-default">Default</span>
+      <span class="label label-primary">Primary</span>
+      <span class="label label-success">Success</span>
+      <span class="label label-info">Info</span>
+      <span class="label label-warning">Warning</span>
+      <span class="label label-danger">Danger</span>
+      <!-- /Labels -->
+
+
+      <!-- Alerts -->
+      <h2 class="h1">Alerts</h2>
+      <div class="alert" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-primary" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </div>
+      <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+
+      <h3>Dismissible Alerts</h3>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </div>
+      <!-- /Alerts -->
+
+
+      <!-- Modals -->
+      <h2 class="h1">Modals</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              Sum expectantes. Ego hodie expectantes. Expectantes, et misit unum de pueris Gus interficere. Et suus vos. Nescio quis, qui est bonus usus liberi ad Isai? Qui nosti ... Quis dimisit filios ad necem ... hmm? Gus! Est, ante me factus singulis decem gradibus.
+              Et nunc ad aliud opus mihi tandem tollendum est puer ille consensus et nunc fugit. Ipse suus obtinuit eam. Non solum autem illa, sed te tractantur in se trahens felis.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modals -->
+
+
+      <!-- Tooltips -->
+      <h2 class="h1">Tooltips</h2>
+      <div class="align-center">
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+      </div>
+      <!-- /Tooltips -->
+
+
+      <!-- Popovers -->
+      <h2 class="h1">Popovers</h2>
+      <div class="align-center">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on left
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on top
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on bottom
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on right
+        </button>
+      </div>
+      <!-- /Popovers -->
+
+
     </div>
 
     <!-- Footer -->
-    <footer class="youplay-footer-parallax">
-      <div class="wrapper" style="background-image: url('assets/images/footer-bg.jpg')">
+    <footer class=-tp-footer-parallax">
+      <div class="wrap dper" style="background-image: url('assets/images/footer-bg.jpg')">
 
         <!-- Social Buttons -->
         <div class="social">
           <div class="container">
-            <h3>Connect socially with <strong>youplay</strong></h3>
+            <h3>Connect socially with <strong-tp</strong></h3>
 
-            <div class="row icons">
+ d            <div class="row icons">
               <div class="col-xs-6 col-sm-3">
                 <a href="#!">
                   <i class="fa fa-facebook-square"></i>
@@ -993,55 +550,11 @@
   <!-- Search Block -->
   <div class="search-block">
     <a href="#!" class="search-toggle glyphicon glyphicon-remove"></a>
-    <form action="http://html.nkdev.info/youplay/dark/search.html">
-      <div class="youplay-input">
-        <input type="text" name="search" placeholder="Search...">
+    <form action="search.html">
+      <div class=-tp-input">
+        <input type=" dtext" name="search" placeholder="Search...">
       </div>
     </form>
   </div>
   <!-- /Search Block -->
-
-
-  <!-- jQuery -->
-  <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
-
-  <!-- CSS Shapes Polyfill -->
-  <script type="text/javascript" src="{{asset('js/shapes-polyfill.min.js')}}"></script>
-
-  <!-- Hexagon Progress -->
-  <script type="text/javascript" src="{{asset('js/jquery.hexagonprogress.min.js')}}"></script>
-
-  <!-- Bootstrap -->
-  <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-
-  <!-- Skrollr -->
-  <script type="text/javascript" src="{{asset('js/skrollr.min.js')}}"></script>
-
-  <!-- Jarallax -->
-  <script type="text/javascript" src="{{asset('js/jarallax.js')}}"></script>
-
-  <!-- Smooth Scroll -->
-  <script type="text/javascript" src="{{elixir('js/smooth-scroll.js')}}"></script>
-
-  <!-- Countdown -->
-  <script type="text/javascript" src="{{asset('js/jquery.countdown.min.js')}}"></script>
-
-  <!-- Revolution Slider -->
-  <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}"></script>
-
-  <!-- Isotope -->
-  <script type="text/javascript" src="{{asset('js/isotope.pkgd.min.js')}}"></script>
-
-  <!-- youplay -->
-  <script type="text/javascript" src="{{asset('js/youplay.min.js')}}"></script>
-  <!-- init youplay -->
-  <script>
-    if(typeof youplay !== 'undefined') {
-        youplay.init({
-            smoothscroll: false,
-        });
-    }
-  </script>
-</body>
-</html>
+@stop
